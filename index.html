@@ -18,73 +18,71 @@
     <header>
       <nav>
         <div #id="logo">
-          <span class="BR">BR</span> <span class="Architects">Architects</span>
+          <span class="BR">BR</span> Architects
         </div>
         <input type="checkbox" id="check" />
         <label id="burger" for="check">
           <i class="fa-solid fa-bars bleu ma-bars"></i>
         </label>
         <ul>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contacts</li>
+          <li><a href="#anchor_projects">Projects</a></li>
+          <li><a href="#anchor_about">About</a></li>
+          <li><a href="#anchor_contact">Contacts</a></li>
         </ul>
       </nav>
       <div id="img-text_header">
-        <h1>BR</h1>
-        <img src="./assets/img/architect.jpg" alt="" />      
+        <h1>BR</h1> <span id="archi">Architects</span>     
       </div>
     </header>
 
     <main>
       <section #id="projects">
-        <h2>Projects</h2>
+        <h2 id="anchor_projects">Projects</h2>
         <div id="gallery">
-          <div>
+          <div class="img_espace_projects">
             <h3>Summer House</h3>
             <img class="img_projects" src="./assets/img/house5.jpg" alt="" />
           </div>
 
-          <div>
+          <div class="img_espace_projects">
             <h3>Brick House</h3>
             <img class="img_projects" src="./assets/img/house2.jpg" alt="" />
           </div>
 
-          <div>
+          <div class="img_espace_projects">
             <h3>Renovated</h3>
             <img class="img_projects" src="./assets/img/house3.jpg" alt="" />
           </div>
 
-          <div>
+          <div class="img_espace_projects">
             <h3>Barn House</h3>
             <img class="img_projects" src="./assets/img/house4.jpg" alt="" />
           </div>
 
-          <div>
+          <div class="img_espace_projects">
             <h3>Summer House</h3>
             <img class="img_projects" src="./assets/img/house2.jpg" alt="" />
           </div>
 
-          <div>
+          <div class="img_espace_projects">
             <h3>Brick House</h3>
             <img class="img_projects" src="./assets/img/house5.jpg" alt="" />
           </div>
 
-          <div>
+          <div class="img_espace_projects">
             <h3>Renovated</h3>
             <img class="img_projects" src="./assets/img/house4.jpg" alt="" />
           </div>
 
-          <div>
+          <div class="img_espace_projects">
             <h3>Barn House</h3>
-
             <img class="img_projects" src="./assets/img/house3.jpg" alt="" />
           </div>
         </div>
       </section>
 
-      <section id="about">
-        <h2>About</h2>
+      <section id="about"></section>
+        <h2 id="anchor_about">About</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -98,51 +96,79 @@
         </p>
 
         <div id="carte">
-          <div><img src="./assets/img/team2.jpg" alt="" /></div>
-          <h4>John Doe</h4>
-          <h5>CEO & Founder</h5>
-          <p>
-            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
-            sodales pellentesque elementum.
-          </p>
-          <button>Contact</button>
-        </div>
+          <div class="profile">
+            <img src="./assets/img/team2.jpg" alt="" />
+            <h4>John Doe</h4>
+            <h5>CEO & Founder</h5>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <button>Contact</button>
+          </div>
 
-        <div id="carte">
-          <div><img src="./assets/img/team1.jpg" alt="" /></div>
-          <h4>Jane Doe</h4>
-          <h5>Architect</h5>
-          <p>
-            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
-            sodales pellentesque elementum.
-          </p>
-          <button>Contact</button>
-        </div>
+          <div class="profile">
+            <img src="./assets/img/team1.jpg" alt="" />
+            <h4>Jane Doe</h4>
+            <h5>Architect</h5>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <button>Contact</button>
+          </div>
 
-        <div id="carte">
-          <div><img src="./assets/img/team3.jpg" alt="" /></div>
-          <h4>Mike Ross</h4>
-          <h5>Architect</h5>
-          <p>
-            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
-            sodales pellentesque elementum.
-          </p>
-          <button>Contact</button>
-        </div>
+          <div class="profile">
+            <img src="./assets/img/team3.jpg" alt="" />
+            <h4>Mike Ross</h4>
+            <h5>Architect</h5>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <button>Contact</button>
+          </div>
 
-        <div id="carte">
-          <div><img src="./assets/img/team4.jpg" alt="" /></div>
-          <h4>Dan Star</h4>
-          <h5>Architect</h5>
-          <p>
-            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
-            sodales pellentesque elementum.
-          </p>
-          <button>Contact</button>
+          <div class="profile">
+            <img src="./assets/img/team4.jpg" alt="" />
+            <h4>Dan Star</h4>
+            <h5>Architect</h5>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <button>Contact</button>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section id="contact">
+        <h2 id="anchor_contact">Contact</h2>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form action="">
+          <input type="text" name="username" placeholder="Name" />
+          <input type="email" name="useremail" placeholder="Email" />
+          <input type="text" name="subject" id="suject" placeholder="Subject" />
+          <input type="text" name="comment" placeholder="Comment" />
+          <input
+            type="submit"
+            name="submitted"
+            value="SEND MESSAGE"
+            class="send"
+            id="button"
+          />
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41508.64622912317!2d1.0499722438894514!3d49.44122833259129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de76ca71faab%3A0x3d1cabefa49f93d6!2sRouen!5e0!3m2!1sfr!2sfr!4v1694522093873!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <div id="img-map">
+          <img src="./assets/img/map.jpg" alt="map" />
+        </div> -->
+
+        <div id="powered">
+          <p>Powered by Footer</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
