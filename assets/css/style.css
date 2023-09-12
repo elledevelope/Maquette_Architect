@@ -15,6 +15,8 @@ img {
 
 header nav {
   padding: 30px;
+header nav {
+  padding: 30px;
   letter-spacing: 0.3rem;
   font-size: 20px;
   display: flex;
@@ -47,6 +49,8 @@ header ul {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.753);
   top: 81px;
+  background-color: rgba(255, 255, 255, 0.753);
+  top: 81px;
   left: 0;
   flex-direction: column;
 }
@@ -60,6 +64,7 @@ li {
 }
 
 #check {
+  display: none;
   display: none;
 }
 
@@ -77,6 +82,8 @@ li {
 }
 
 nav .BR {
+
+nav .BR {
   font-weight: bold;
 }
 
@@ -90,7 +97,18 @@ nav .BR {
 }
 
 /* #img-text_header h1 {
+#archi {
+  display: none;
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* #img-text_header h1 {
   position: absolute;
+  display: inline;
   display: inline;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.807);
@@ -111,7 +129,26 @@ h1 {
   text-align: center;
   justify-content: center;
 }
+  justify-content: center;
+} */
 
+h1 {
+  background-color: rgba(0, 0, 0, 0.807);
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+header #img-text_header {
+  background-image: url("../img/architect.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  background-position: center;
 header #img-text_header {
   background-image: url("../img/architect.jpg");
   background-position: center;
@@ -141,7 +178,28 @@ header #img-text_header {
   width: 100%;
 }
 
+  align-items: center;
+}
+
+/* Section Projects #gallery */
+
+/* #projects {
+  width: 95%;
+  margin: 0 auto;
+} */
+
+#gallery {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.img_espace_projects {
+  width: 100%;
+}
+
 h2 {
+  margin: 50px auto;
   margin: 50px auto;
   padding: 20px;
   font-weight: lighter;
@@ -151,6 +209,9 @@ h2 {
 
 #gallery {
   position: relative;
+  width: 95%;
+  margin: 0 auto;
+
   width: 95%;
   margin: 0 auto;
 
@@ -179,7 +240,143 @@ h2 {
   margin: auto;
 }
 
+.profile {
+  margin-right: 10px;
+}
+
+#about {
+  width: 95%;
+  margin: auto;
+}
+
 #about p {
+  padding: 30px 0;
+}
+
+#about h4 {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+#about h5 {
+  font-weight: 300;
+  color: grey;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+
+/* Section Contact */
+
+#contact {
+  width: 95%;
+  margin: auto;
+}
+
+#contact p {
+  padding: 10px 0;
+}
+
+#contact input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 1px rgb(194, 194, 194) solid;
+}
+
+footer #button {
+  width: 200px;
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* footer #img-map {
+  margin: 0 auto;
+} */
+
+footer #powered {
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+
+@media screen and (min-width: 576px) {
+  /* Smooth Scrolling for anchor */
+  html {
+    scroll-behavior: smooth;
+  }
+
+.img_espace_projects {
+  width: 45%;
+}
+  
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #carte {   
+    display: flex;
+    flex-wrap: wrap;    
+  }
+  .profile {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #archi {
+    display: inline;
+  }
+
+  footer #img-map {
+    width: 100%;
+  }
+
+  #contact input {
+    width: 100%;
+  }
+
+  footer #button {
+    width: 200px; 
+  }
+
+  #carte {   
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #projects {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .img_espace_projects {
+    width: 23%;
+    margin: 0 auto;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  header ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; 
+      top: 10px; 
+      left: 70%; 
+  }
+}
+
   padding: 30px 0;
 }
 
