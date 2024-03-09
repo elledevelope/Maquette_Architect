@@ -45,7 +45,8 @@ header ul {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.753);
   top: 81px;
-  left: 0;
+  /* left: 0; */
+  right: 60px;
   flex-direction: column;
 }
 
@@ -69,8 +70,8 @@ li {
   padding: 0.5rem;
   margin-right: 50px;
   margin-top: 0px;
-  border: 1px solid #000;
-  border-radius: 0.5rem;
+  /* border: 1px solid #000; */
+  /* border-radius: 0.5rem; */
 }
 
 nav .BR {
